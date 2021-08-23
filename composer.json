@@ -1,0 +1,26 @@
+{
+  "name": "widget/header",
+  "type": "library",
+  "description": "Javascript widget header",
+  "keywords": [
+    "ubyte",
+    "client-side",
+    "widget",
+    "header"
+  ],
+  "homepage": "https://github.com/energia-source/widget-header",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paolo Fabris",
+      "email": "support@ubyte.it",
+      "homepage": "https://www.ubyte.it/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Header\\": "lib/"
+    }
+  }
+}

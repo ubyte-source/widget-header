@@ -1,0 +1,22 @@
+header { position: absolute; top: 0; right: 0; left: 0; height: 48px; background-color: #397be6; z-index: 256; box-shadow: 0 2px 8px 0 #c7c7c7; }
+
+header h6.title { padding: 8px; margin-top: 4px; }
+header h6.title a { color: #fff; font-size: 16px; padding: 5px 8px; border-radius: 4px; }
+header h6.title a:hover { background-color: rgb(255,255,255,0.2); }
+header h6.title, header div.inline span.username { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis; }
+
+header div.inline { float: right; padding: 8px; }
+header div.inline span.username { line-height: 30px; padding: 10px; color: #fff; }
+header div.inline img.image { float: inherit; width: 32px; height: 32px; cursor: pointer; border-radius: 50%; }
+header div.inline img.image:hover { box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12); }
+header div.inline div { width: 24px; height: 24px; padding: 4px; line-height: 24px; text-align: center; border-radius: 50%; cursor: pointer; }
+
+header div.inline ul.submenu { display: none; position: absolute; top: 48px; right: 8px; width: 200px; background-color: #fff; border: 1px solid #ccc; border-top: 0; border-right: 0; box-shadow: 0 2px 8px 0 #c7c7c7; }
+header div.inline ul.submenu.show { display: block; }
+header div.inline ul.submenu:before { content: ''; position: absolute; top: -8px; right: 8px; width: 0; height: 0; border-style: solid; border-width: 0 8px 8px; border-color: transparent transparent #fff; }
+header div.inline ul.submenu li { line-height: 0; color: #555; cursor: pointer; }
+header div.inline ul.submenu li { white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis; }
+header div.inline ul.submenu li a { display: block; padding: 12px; color: #555; }
+header div.inline ul.submenu li a i { margin-right: 8px; }
+header div.inline ul.submenu li:hover { background-color: #f1f1f1; }
+header div.inline ul.submenu li:hover a { color: #333; }
