@@ -57,7 +57,6 @@ document.appendChild(header.out());
     - [window.Chat.Body.Message.Line](https://github.com/energia-source/widget-chat#class-windowchatbodymessageline-usable-methods)
     - [window.Chat.Loader](https://github.com/energia-source/widget-chat#class-windowchatloader-usable-methods)
 
-
 ## ***Class window.Header usable methods***
 
 ##### `static handle()`
