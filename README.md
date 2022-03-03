@@ -1,6 +1,6 @@
 # Documentation widget-header
 
-> Widget Javascript Header is a library used to create an header for your web page.
+Widget Javascript Header is a library used to create an header for your web page.
 
 ## Usage
 
@@ -9,6 +9,7 @@ So the basic setup looks something like this:
 ```
 
 let header = new Header();
+
 header.setUrl('Application base URL'); // When click title
 header.setTitle('Application name');
 
@@ -17,22 +18,14 @@ let profile = header.getProfile(),
 profile.setUsername('my@email.com');
 // profile.setImage(<uri>);
 
-if (window.page.checkPolicy('iam/user/view/upsert') && window.page.checkPolicy('iam/user/action/update/me')) {
-  let account_label = window.page.getTranslate('header.buttons.my_account'),
+  let account_label = 'My Account',
       account = profile_burger.addItem(account_label, 'account_circle');
-  account.href = window.page.iam
-               + 'iam/user/upsert'
-               + String.fromCharcode(47)
-               + '<key>';
-}
+  account.href = 'The uri to the profile detail'
+
 
 profile_burger.addItem('Logout', 'exit_to_app', function () {
   let xhr = new WXmlHttpRequest(),
-      api = '/api/sso/user/gateway/iam/iam/user/logout'
-          + String.fromCharcode(63)
-          + 'timestamp'
-          + String.fromCharcode(61)
-          + Date.now();
+      api = 'uri to a logout action'
 
   xhr.setRequestUrl(api);
   xhr.setCallbackSuccess(function (response) {
@@ -48,16 +41,14 @@ document.appendChild(header.out());
 
 ## Structure
 
-- library:
-    - [window.Chat](https://github.com/energia-source/widget-chat#class-windowchat-usable-methods)
-    - [window.Chat.Body](https://github.com/energia-source/widget-chat#class-windowchatbody-usable-methods)
-    - [window.Chat.Body.Picture](https://github.com/energia-source/widget-chat#class-windowchatbodypicture-usable-methods)
-    - [window.Chat.Body.Picture.Initials](https://github.com/energia-source/widget-chat#class-windowchatbodypictureinitials-usable-methods)
-    - [window.Chat.Body.Message](https://github.com/energia-source/widget-chat#class-windowchatbodymessage-usable-methods)
-    - [window.Chat.Body.Message.Line](https://github.com/energia-source/widget-chat#class-windowchatbodymessageline-usable-methods)
-    - [window.Chat.Loader](https://github.com/energia-source/widget-chat#class-windowchatloader-usable-methods)
+library:
+    - [window.Header](https://github.com/energia-source/widget-header#class-windowheader-usable-methods)
+    - [window.Header.Profile](https://github.com/energia-source/widget-header#class-windowheaderprofile-usable-methods)
+    - [window.Header.Menu](https://github.com/energia-source/widget-header#class-windowheadermenu-usable-methods)
 
-## ***Class window.Header usable methods***
+<br>
+
+#### ***Class window.Header usable methods***
 
 ##### `static handle()`
 
@@ -156,7 +147,9 @@ Find the closest attribute to the target element
    * `html` — If true, the attribute is searched for in the HTML source code.
  * **Returns:** The closest attribute.
 
-## ***Class window.Header.Profile usable methods***
+<br>
+
+#### ***Class window.Header.Profile usable methods***
 
 ##### `static person()`
 
@@ -220,7 +213,9 @@ Get the container of the current cell
 
  * **Returns:** The container element.
 
-## ***Class window.Header.Menu usable methods***
+<br>
+
+#### ***Class window.Header.Menu usable methods***
 
 ##### `constructor(profile)`
 
@@ -286,6 +281,19 @@ Returns a boolean indicating whether the modal is currently shown
 ## Built With
 
 * [Javascript](https://www.javascript.com/) - Javascript
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/energia-source/widget-header/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting us pull requests.
+
+## Versioning
+
+We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/energia-source/widget-header/tags). 
+
+## Authors
+
+* **Paolo Fabris** - *Initial work* - [energia-europa.com](https://www.energia-europa.com/)
+* **Gabriele Luigi Masero** - *Developer* - [energia-europa.com](https://www.energia-europa.com/)
 
 ## License
 
