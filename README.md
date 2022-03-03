@@ -42,9 +42,9 @@ document.appendChild(header.out());
 ## Structure
 
 library:
-    - [window.Header](https://github.com/energia-source/widget-header#class-windowheader-usable-methods)
-    - [window.Header.Profile](https://github.com/energia-source/widget-header#class-windowheaderprofile-usable-methods)
-    - [window.Header.Menu](https://github.com/energia-source/widget-header#class-windowheadermenu-usable-methods)
+- [window.Header](https://github.com/energia-source/widget-header#class-windowheader-usable-methods)
+- [window.Header.Profile](https://github.com/energia-source/widget-header#class-windowheaderprofile-usable-methods)
+- [window.Header.Menu](https://github.com/energia-source/widget-header#class-windowheadermenu-usable-methods)
 
 <br>
 
